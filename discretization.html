@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discretization</title>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="discrete.css">
+
+</head>
+
+<body>
+<div class="container-fluid">
+<!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+<!--    The Navigation Bar  -->
+
+    <div class="row navbar">
+        <div class="col-md-2 logo"><a href="overview.html"><img id="logo" src="images\logo.png" alt="dummy.jpg"></a></div>
+        <div class="col-md-2"><a href="reality.html"><img id="img1" src="images\over1.jpeg" alt="dummy.jpg"><div class="content" id="text1"></div></a></div>
+        <div class="col-md-2"><a href="ideal.html"><img class="selected" src="images\over2.png" alt="dummy.jpg"><div class="content" id="text2"></div></a></div>
+        <div class="col-md-2"><a href="discretization.html"><img id="img3" src="images\over3.png" alt="dummy.jpg"><div class="content" id="text3"></div></a></div>
+        <div class="col-md-2"><a href="geometric.html"><img id="img4" src="images\over4.png" alt="dummy.jpg"><div class="content" id="text4"></div></a></div>
+        <div class="col-md-2"><a href="algebraic.html"><img id="img5" src="images\over5.png" alt="dummy.jpg"><div class="content" id="text5"></div></a></div>
+        <svg class="navSvg" width="100%" height="20px">
+            <path id="track" stroke="black" stroke-width="10" style="stroke-opacity: 70%;"></path>
+        </svg>
+    </div>
+
+<!--    The Navigation Bar(close)  -->
+    <!-- Reality main -->
+
+    <div class="row" id="Main">
+        <div class="col-md-5">
+            <div id="leftMain">
+                <h1><b>Discretization</b></h1>
+                <ul>
+                    <li>
+                        As part of the modelling process, we make the following assumptions: <br> The movement of the planet is only dependent on the Sun’s gravitational force. <br>                         We also adhere to the following points: <br> The orbits are elliptical.
+
+
+                    </li>
+                    <li>
+                        Here, we label the two sections as two separate triangles to claculate the area. In the following stages we will label the sections to derive a quantifiable value.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div id="rightMain">
+                <div class="grid-container">
+                    <div class="item1">
+                        <img src="images/idealization2.jpeg">
+                    </div>
+                    <div class="item2">
+                        <img src="images/discrete.gif">
+                    </div>
+                    <div class="item3">
+                        <a href="geometric.html"
+                        class="btn btn-success" type="button">Let's solve this system</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reality main(close) -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------- -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+</div>
+</body>
+
+<script src="javascript\navbar.js"></script>
+</html>
+<!-- "Model Wing" (https://skfb.ly/6UHWK) by AnsysLearn is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
+<!-- "Airplane N061213" (https://skfb.ly/6YG6X) by Nyilonelycompany is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). -->
